@@ -1,0 +1,318 @@
+
+.d-flex {
+    display: flex;
+}
+
+body {
+    background-color: #383737;
+}
+
+.playerDiv {
+    display: flex;
+    height: 100px;
+    width: 120px;
+}
+
+.playerDiv > img {
+    width: 100px;
+    border-radius: 50px;
+    border: white 4px solid;
+
+}
+
+.playerDiv > img:hover {
+    border: #fb667a 4px solid;
+}
+
+button {
+    border-radius: 20px;
+    margin-top: 40px;
+    height: 50px;
+    width: 150px;
+    background-color: #23f2c9;
+}
+
+button:hover {
+    background-color: #fb667a;
+}
+
+h5 {
+    text-align: center;
+}
+
+.playersContainer {
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toolbar {
+    margin: 30px auto;
+    height: 50px;
+    width: 35%;
+    background-color: #232323;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: darkgrey 2px solid;
+}
+
+h3 {
+    color: #b5ccc6;
+    font-family: "PT Serif";
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo > img {
+    margin-top: 40px;
+    box-shadow: 24px 21px 56px 0px rgba(255, 255, 255, 0.55);
+    -webkit-box-shadow: 24px 21px 56px 0px rgba(255, 255, 255, 0.55);
+    -moz-box-shadow: 24px 21px 56px 0px rgba(255, 255, 255, 0.55);
+    height: 100px;
+    width: 300px;
+    border-radius: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex4 {
+    flex: 4;
+}
+
+
+.leftBox {
+    margin: 40px 10px;
+    border: black 2px solid;
+    /*height: 1200px;*/
+    height: 100vh;
+}
+
+.rightBox {
+    margin: 40px 10px;
+    border: black 2px solid;
+    height: 400px;
+}
+
+.leftBox {
+    padding: 20px;
+    background-color: darkgrey;
+    border-radius: 50px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+"card1 card2 card3 card4 card5"
+"card16 empty empty empty card6"
+"card15 empty empty empty card7"
+"card14 empty empty empty card8"
+"card13 card12 card11 card10 card9"
+}
+
+.start {
+    display: flex;
+ justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.startDiv {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    border: #d2d2d2 6px solid;
+}
+
+
+
+.rightBox {
+    background-color: #b5ccc6;
+    border-radius: 50px;
+}
+
+.rightBox > h2 {
+    text-align: center;
+    border-radius: 50px;
+    color: #232323;
+
+}
+
+.card {
+
+    margin: 2px;
+    border: black 2px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b5ccc6;
+    height: 10vw;
+
+}
+
+.card > h3 {
+    width: 80%;
+     text-align: center;
+}
+
+.card >  p {
+    color: #f9f9f9;
+    font-size: 12px;
+}
+
+
+#buyBtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.card:hover {
+    box-shadow: -2px 12px 13px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: -2px 12px 13px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: -2px 12px 13px 0px rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    }
+}
+
+.toolbar {
+    animation: pulse 4s infinite;
+}
+
+
+
+
+p {
+    font-weight: bold;
+}
+
+.boughtAssetContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    overflow: auto;
+    height: 300px;
+    padding: 5px;
+    box-sizing: border-box;
+
+
+}
+
+.boughtAsset {
+    display: flex;
+    background-color: #cccccc;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: white 2px solid;
+    box-sizing: border-box;
+    margin-top: 10px;
+
+}
+
+.moneyContainer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    color: darkgrey;
+}
+
+.boughtAsset > p {
+    margin: 10px;
+}
+
+#sellBtn {
+    width: 50px;
+    height: 30px;
+    background-color: #fb667a;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.profileDiv {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+
+
+}
+
+.profileDiv > img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+}
+
+/*-------dice-------*/
+
+.dice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.dice > img {
+    width: 200px;
+    height: 200px;
+}
+
+.dice > button {
+    font-size: 16px;
+}
+
+
+iframe {
+    margin-top: 40px;
+    height: 20vw;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
