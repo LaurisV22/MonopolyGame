@@ -1,6 +1,6 @@
 import React from 'react';
 import {useDispatch, useSelector,} from "react-redux";
-import {addAsset, buyAsset, movePlayer, sellAsset, removeAsset} from "../features/game";
+import { buyAsset, movePlayer, sellAsset, removeAsset} from "../features/game";
 import {useState} from "react";
 
 const GamePage = () => {

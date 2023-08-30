@@ -27,7 +27,6 @@ export const userSlice = createSlice({
         },
 
         buyAsset: (state, action) => {
-
             state.boughtAssets.push(action.payload);
             state.money -= (action.payload.price);
 
@@ -40,7 +39,6 @@ export const userSlice = createSlice({
 
         removeAsset: (state, action) => {
             state.boughtAssets = state.boughtAssets.filter(asset => asset.id !== action.payload.id);
-
             state.money += (action.payload.price/2);
 
         },
@@ -50,7 +48,7 @@ export const userSlice = createSlice({
     }
 })
 
-export const {selectUserImg, sellAsset, buyAsset, movePlayer, addAsset, removeAsset} = userSlice.actions
+export const {selectUserImg, sellAsset, buyAsset, movePlayer, removeAsset} = userSlice.actions
 //export all functions in reducer
 export default userSlice.reducer;
 
